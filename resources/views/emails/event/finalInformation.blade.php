@@ -26,6 +26,7 @@ Thanks for booking a slot for the {{ $booking->event->name }} event. Here you ca
 | ETA: | **{{ $flight->formattedEta }}** |
 @endisset
 @isset($flight->route)
+**FLY YOUR ASSIGNED ROUTE**
 | Full Route: | **{{ $flight->route }}** |
 @endisset
 @if($booking->event->is_oceanic_event)
