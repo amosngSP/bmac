@@ -3,7 +3,11 @@
 
 Dear **{{ $booking->user->full_name }}**,
 
-Thanks for booking a slot for the {{ $booking->event->name }} event. Here you can find your slot information:
+Thanks for booking a slot for {{ $booking->event->name }} event. 
+
+**Please make sure your AIRAC is up to date (Currently cycle AIRAC 2208). Please also FLY YOUR ASSIGNED ROUTE!**
+
+Here you can find your slot information:
 
 @component('mail::table')
 |  |  |
