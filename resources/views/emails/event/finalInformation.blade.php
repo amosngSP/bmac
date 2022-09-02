@@ -30,7 +30,6 @@ Here you can find your slot information:
 | ETA: | **{{ $flight->formattedEta }}** |
 @endisset
 @isset($flight->route)
-**FLY YOUR ASSIGNED ROUTE**
 | Full Route: | **{{ $flight->route }}** |
 @endisset
 @if($booking->event->is_oceanic_event)
