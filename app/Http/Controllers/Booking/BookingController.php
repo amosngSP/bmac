@@ -161,8 +161,16 @@ class BookingController extends Controller
 
             $booking->status = BookingStatus::BOOKED;
             if ($booking->getOriginal('status') === BookingStatus::RESERVED) {
+                
+                if(Carbon::now() > $booking->event->startConfirm){
+                    $booking->confirmed_at = Carbon::now();
+                    $booking->save();
+                } else {
                 $booking->save();
+                }
                 event(new BookingConfirmed($booking));
+                
+                
                 if (!Str::contains(config('mail.default'), ['log', 'array'])) {
                     $message = __('Your booking has been confirmed. You should shortly receive an email with your booking details. Be sure to also check your spam folder.');
                 } else {
