@@ -1,3 +1,51 @@
+## [2.8.5](https://github.com/daveroverts/bmac/compare/v2.8.4...v2.8.5) (2022-12-05)
+
+
+### Bug Fixes
+
+* disable user endpoint ([254302f](https://github.com/daveroverts/bmac/commit/254302f9e92e1029e5365cf51df7549e9d7b0ff2))
+
+## [2.8.4](https://github.com/daveroverts/bmac/compare/v2.8.3...v2.8.4) (2022-12-05)
+
+
+### Bug Fixes
+
+* **deps:** downgrade sweetalert2 to 11.4.8 ([9671671](https://github.com/daveroverts/bmac/commit/96716710402757870ea4cf256bd6ce6a5627fa1a))
+
+## [2.8.3](https://github.com/daveroverts/bmac/compare/v2.8.2...v2.8.3) (2022-11-14)
+
+
+### Bug Fixes
+
+* add bors.toml ([3ec082c](https://github.com/daveroverts/bmac/commit/3ec082c69f09d2a4739b7bebcf066cdd21921f21))
+
+## [2.8.2](https://github.com/daveroverts/bmac/compare/v2.8.1...v2.8.2) (2022-11-02)
+
+
+### Bug Fixes
+
+* **build:** add laravel pint ([79c0650](https://github.com/daveroverts/bmac/commit/79c065025fd81cbab2e83a2c8d58d2eb6b3753a3))
+* convert commonjs imports to esm imports ([b85cdee](https://github.com/daveroverts/bmac/commit/b85cdee16bdd7924608c994ef787aa7dd0c68663))
+
+## [2.8.1](https://github.com/daveroverts/bmac/compare/v2.8.0...v2.8.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* **build:** add build command to match vite commands ([d1d84c9](https://github.com/daveroverts/bmac/commit/d1d84c934c727f3d148d913822d7b3f2d4ed8aa7))
+
+
+### Reverts
+
+* ci(ci): run tests parallel ([85fb10d](https://github.com/daveroverts/bmac/commit/85fb10d6fde1ace792e0d531aedeccf05d156b6c))
+
+# [2.8.0](https://github.com/daveroverts/bmac/compare/v2.7.2...v2.8.0) (2022-06-02)
+
+
+### Features
+
+* drop php 8.0 support ([ac77241](https://github.com/daveroverts/bmac/commit/ac772415f81f035508b6403118d9f6c01d7d3b4e))
+
 ## [2.7.2](https://github.com/daveroverts/bmac/compare/v2.7.1...v2.7.2) (2022-02-27)
 
 
