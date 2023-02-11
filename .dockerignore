@@ -1,0 +1,33 @@
+*
+
+# Needed for runtime
+!app/
+!bootstrap/
+!config/
+!database/
+!docker_files/
+!public/
+!resources/
+!routes/
+!artisan
+!composer.json
+!composer.lock
+!unit.json
+
+# Ignore
+bootstrap/cache/*.php
+database/*.sqlite*
+
+# Ignore files in storage/
+!storage/
+storage/app/public/**
+storage/framework/cache/**
+storage/framework/sessions/**
+storage/framework/testing/**
+storage/framework/views/**
+storage/logs/**
+!storage/framework/cache/data/
+storage/framework/cache/data/**
+
+# Ignore all .gitignore files
+**/.gitignore
