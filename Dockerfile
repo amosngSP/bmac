@@ -3,12 +3,12 @@ FROM nginx/unit:1.28.0-php8.1
 # Install PHP extensions
 RUN set -ex \
     && apt-get update \
-    && apt-get install --no-install-recommends -y git libfreetype6 libfreetype6-dev libjpeg62-turbo libjpeg62-turbo-dev libpng16-16 libpng-dev libwebp6 libwebp-dev unzip \
+    && apt-get install --no-install-recommends -y git libfreetype6 libfreetype6-dev libjpeg62-turbo libjpeg62-turbo-dev libpng16-16 libpng-dev libwebp6 libwebp-dev libzip4 libzip-dev unzip \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
-    && docker-php-ext-install gd pdo_mysql \
+    && docker-php-ext-install gd pdo_mysql pcntl zip \
     && pecl install redis-5.3.7 \
     && docker-php-ext-enable redis \
-    && apt-get purge -y --auto-remove git libfreetype6-dev libjpeg62-turbo-dev libpng-dev libwebp-dev \
+    && apt-get purge -y --auto-remove git libfreetype6-dev libjpeg62-turbo-dev libpng-dev libwebp-dev libzip-dev \
     && rm -rf /tmp/pear /var/lib/apt/lists/*
 
 # Install Composer
