@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
     <div class="container">
 
-        <a class="navbar-brand" href="{{ URL::to('/') }}"><img src="{{ asset('images/division-square.jpg') }}"
+        <a class="navbar-brand" href="{{ URL::to('/') }}"><img src="{{ asset('images/vatsim.png') }}"
                 height="45"></a>
 
         <a class="navbar-brand" href="{{ URL::to('/') }}">
