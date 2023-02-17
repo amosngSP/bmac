@@ -12,7 +12,10 @@
 !artisan
 !composer.json
 !composer.lock
+!package.json
+!package-lock.json
 !unit.json
+!webpack.mix.js
 
 # Ignore
 bootstrap/cache/*.php
