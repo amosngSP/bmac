@@ -27,6 +27,17 @@ COPY --chown=unit:unit . /var/www/app
 RUN set -ex \
     && composer install --no-dev --optimize-autoloader \
     && rm -rf /root/.composer \
-    && chown -R unit:unit bootstrap/cache vendor
+    && php artisan storage:link \
+    && chown -R unit:unit bootstrap/cache public/storage vendor
+
+# Build frontend assets
+RUN set -ex \
+    && apt-get update \
+    && apt-get install --no-install-recommends -y build-essential git nodejs npm \
+    && npm ci \
+    && npm run build \
+    && apt-get purge -y --auto-remove build-essential git nodejs npm \
+    && rm -rf /root/.npm /var/lib/apt/lists/* /var/www/app/node_modules \
+    && chown -R unit:unit public
 
 # CMD and ENTRYPOINT are inherited from the Unit image
