@@ -5,9 +5,11 @@ Dear **{{ $booking->user->full_name }}**,
 
 Thank you for your recent booking for **{{ $booking->event->name }}** event.
 
+@if ($booking->event->startConfirm || $booking->event->endConfirm)
 **THIS EMAIL DOES NOT CONSTITUTE CONFIRMATION OF YOUR BOOKING!!**
 
 You will be required to come back to confirm your booking between {{ $booking->event->startConfirm }} and {{ $booking->event->endConfirm }} to secure your slots. Otherwise, your slot will be released!
+@endif
 
 For reference, your booking details are listed below.
 
