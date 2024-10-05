@@ -3,9 +3,9 @@
 
 Dear **{{ $booking->user->full_name }}**,
 
-Thanks for booking a slot for {{ $booking->event->name }} event. 
+Thanks for booking a slot for {{ $booking->event->name }} event.
 
-**Please make sure your AIRAC is up to date (Currently cycle AIRAC 2208). Please also FLY YOUR ASSIGNED ROUTE!**
+**Please make sure your AIRAC is up to date. Please also FLY YOUR ASSIGNED ROUTE!**
 
 Here you can find your slot information:
 
